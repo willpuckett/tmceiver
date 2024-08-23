@@ -24,7 +24,8 @@ Start with power off.
 5. Connect the CAN bus to the JST XH connector. 
 6. Terminate the CAN bus by placing a jumper on the pins labeled `TERM`.
 7. You can connect a second CAN device to the other JST XH connector, in which case you should remove the jumper from the `TERM` pins and terminate the bus at the last device.
-8. Compile firmware and flash your board, probably with [Katapult](https://github.com/arksine/katapult) first, and then with [Klipper](https://github.com/klipper3d/klipper). If you're connecting to the CAN bus with USB via the Robin Nano V3, you'll need to compile in CAN bus bridge mode. Use pins 'PD0/PD1' for the CAN bus.
+8. Compile and flash your board (Use pins 'PD0/PD1' for the CAN bus) with the [Katapult](https://github.com/arksine/katapult) bootloader. You can build the Katapult Deployer and flash it via SD Card, or follow [these instructions](https://github.com/willpuckett/config/blob/main/reference/MKS/Robin_Nano_V3.1.md#flashing-katapult) to flash with OpenOCD.
+9. Flash [Klipper](https://github.com/klipper3d/klipper). If you're connecting to the CAN bus with USB via the Robin Nano V3, you'll need to compile in CAN bus bridge mode. 
 
 ## Schematic
 
