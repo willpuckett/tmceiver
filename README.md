@@ -4,9 +4,10 @@ A drop in CAN transceiver for Robin Nano V3.
 
 ![TMCeiver](images/z+.jpg)
 
-TMCeiver utilizes a spare stepper slot on Robin Nano V3. 
+TMCeiver utilizes a spare stepper slot on Robin Nano V3 to provide CAN connectivity. 
 
 ## Features
+
 - CANFD support (in hardware, not yet supported in Klipper)
 - Excellent reliability--no CAN retransmits in several months of testing
 - Jumperable 120 ohm termination resistor
