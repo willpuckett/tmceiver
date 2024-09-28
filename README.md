@@ -8,7 +8,7 @@ TMCeiver utilizes a spare stepper slot on Robin Nano V3 to provide CAN connectiv
 
 ## Features
 
-- CANFD support (in hardware, not yet supported in Klipper)
+- CANFD capable (not yet supported in Klipper)
 - Excellent reliability--no CAN retransmits in several months of testing
 - Jumperable 120 ohm termination resistor
 - Less cabling to crimp
