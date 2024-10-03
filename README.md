@@ -35,4 +35,4 @@ Start with power off.
 
 Use the files in [production_files](jlcpcb/production_files/) directory to order the PCB from your favorite board house. If you're trying to lower costs, you can opt for assembly on the bottom side only, and hand solder the top side components.
 
-There's also a couple available from my first run [here](https://octule.etsy.com).
+There's also a couple available from my first run [here](https://octule.com).
