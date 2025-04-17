@@ -2,15 +2,15 @@
 
 A drop in CAN transceiver for Robin Nano V3. 
 
-![TMCeiver](images/z+.jpg)
+![TMCeiver](.images/z+.jpg)
 
 TMCeiver utilizes a spare stepper slot on Robin Nano V3 to provide CAN connectivity. 
 
 ## Features
 
 - CANFD capable (not yet supported in Klipper)
-- Excellent reliability--no CAN retransmits in several months of testing
-- Jumperable 120 ohm termination resistor
+- Excellent reliability—no CAN retransmits in several months of testing
+- Jumperable 120 Ω termination resistor
 - Less cabling to crimp
 
 ## Installation
@@ -18,9 +18,9 @@ TMCeiver utilizes a spare stepper slot on Robin Nano V3 to provide CAN connectiv
 Start with power off.
 
 1. Remove the stepper driver from the slot you want to use.
-2. Make sure the steppers are jumpered to run at 5v.
-3. Use jumpers to jump the MISO and SCK pins to the TMCeiver. MISO and SCK are the first and third pins from the mcu side of the stepper slot. If you're not sure, you can jumper the entire row (all four pins). 
-4. Insert TMCeiver into the slot, aligning the EN silkscreen with the EN slot on the board. If you get it backwards, nothing will be damaged, but it won't work.
+2. Make sure the steppers are jumpered to run at 5v. <br />![jumper to 5v](.images/drive_power.png)
+3. Use jumpers to jump the MISO and SCK pins to the TMCeiver. MISO and SCK are the first and third pins from the mcu side of the stepper slot.  If you're not sure, you can jumper the entire row (all four pins). <br />![MISO & SDK](.images/pins_1.png) or ![all pins](.images/pins_2.png)
+4. Insert TMCeiver into the slot, aligning the EN silkscreen with the EN slot on the board. If you get it backwards, nothing will be damaged, but it won't work. <br />![Installed tmceiver](.images/installed.webp)
 5. Connect the CAN bus to the JST XH connector. 
 6. Terminate the CAN bus by placing a jumper on the pins labeled `TERM`.
 7. You can connect a second CAN device to the other JST XH connector, in which case you should remove the jumper from the `TERM` pins and terminate the bus at the last device.
@@ -29,7 +29,7 @@ Start with power off.
 
 ## Schematic
 
-![Schematic](images/schematic.svg)
+![Schematic](.images/schematic.svg)
 
 ## Acquisition
 
