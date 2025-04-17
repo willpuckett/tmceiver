@@ -20,7 +20,7 @@ Start with power off.
 1. Remove the stepper driver from the slot you want to use.
 2. Make sure the steppers are jumpered to run at 5v. <br />![jumper to 5v](.images/drive_power.png)
 3. Use jumpers to jump the MISO and SCK pins to the TMCeiver. MISO and SCK are the first and third pins from the mcu side of the stepper slot.  If you're not sure, you can jumper the entire row (all four pins). <br />![MISO & SDK](.images/pins_1.png) or ![all pins](.images/pins_2.png)
-4. Insert TMCeiver into the slot, aligning the EN silkscreen with the EN slot on the board. If you get it backwards, nothing will be damaged, but it won't work. <br />![Installed tmceiver](.images/installed.webp)
+4. Insert TMCeiver into the slot, aligning the EN silkscreen with the EN slot on the board (for rev3, align the octule icon with EN). If you get it backwards, nothing will be damaged, but it won't work. <br />![Installed tmceiver](.images/installed.webp)
 5. Connect the CAN bus to the JST XH connector. 
 6. Terminate the CAN bus by placing a jumper on the pins labeled `TERM`.
 7. You can connect a second CAN device to the other JST XH connector, in which case you should remove the jumper from the `TERM` pins and terminate the bus at the last device.
